@@ -28,7 +28,7 @@ public class BitacoraService implements IBitacoraService {
 
         return Mono.just(Optional.of(bitacoraRepository.findAll())
                 .filter(bitacoraDTOS -> !bitacoraDTOS.isEmpty())
-                .orElseThrow(() -> new CustomException(Constants.NO_DATA))
+                .orElseThrow(() -> new CustomException(Constants.NO_ACTIVITY))
                 .stream()
                 .filter(Objects::nonNull)
                 .map(IBitacoraMapper.INSTANCE::bitacoraDTOToModel)
