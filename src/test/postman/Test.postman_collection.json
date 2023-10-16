@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "1cbb8a3b-5575-44db-abf0-312f4bfce5ff",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9857218",
+		"_collection_link": "https://solar-trinity-203930.postman.co/workspace/Loans-%2526-Mortgages~4ec13e26-9ab0-4049-bbc3-bb75ab56e2b0/collection/9857218-1cbb8a3b-5575-44db-abf0-312f4bfce5ff?action=share&source=collection_link&creator=9857218"
+	},
+	"item": [
+		{
+			"name": "SAVE EMPLOYEES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employees\": [\r\n        {\r\n            \"firstName\": \"Carolina\",\r\n            \"secondName\": \"\",\r\n            \"lastName\": \"Vixtha\",\r\n            \"secondLastName\": \"Quiterio\",\r\n            \"age\": \"30\",\r\n            \"sex\": \"FEMALE\",\r\n            \"birthDate\": \"12-02-1994\",\r\n            \"job\": \"Dev\"\r\n        },\r\n        {\r\n            \"firstName\": \"Francisco\",\r\n            \"secondName\": \"Javier\",\r\n            \"lastName\": \"Dominguez\",\r\n            \"secondLastName\": \"Gomez\",\r\n            \"age\": \"30\",\r\n            \"sex\": \"MALE\",\r\n            \"birthDate\": \"27-12-1992\",\r\n            \"job\": \"Develop\"\r\n        },\r\n        {\r\n            \"firstName\": \"Renata\",\r\n            \"secondName\": \"Zoé\",\r\n            \"lastName\": \"Dominguez\",\r\n            \"secondLastName\": \"VIxtha\",\r\n            \"age\": \"2\",\r\n            \"sex\": \"FEMALE\",\r\n            \"birthDate\": \"18-02-2023\",\r\n            \"job\": \"Kid\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/saveAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET EMPLOYEES",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "testHeader",
+						"value": "test",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE EMPLOYEE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/delete/employee/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"delete",
+						"employee",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE EMPLOYEE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"New first\",\r\n    \"secondName\": \"\",\r\n    \"lastName\": \"New lastName\",\r\n    \"secondLastName\": \"Quiterio\",\r\n    \"age\": \"30\",\r\n    \"sex\": \"FEMALE\",\r\n    \"birthDate\": \"12/02/1994\",\r\n    \"job\": \"Dev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/update/employee/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"update",
+						"employee",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BITACORA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/getBitacora",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getBitacora"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
