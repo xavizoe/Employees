@@ -14,7 +14,7 @@
     <name>crud</name>
     <description>Test for Indrex</description>
     <properties>
-        <java.version>8</java.version>
+        <java.version>11</java.version>
         <lombok.version>1.18.30</lombok.version>
         <org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
         <junit-jupiter.version>5.7.0</junit-jupiter.version>
